@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url('https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    background-color: #9bf6ff;
+    padding: 10px 200px;
+    box-shadow: 0px 0px 40px black;
+}
+h1{
+    font: 700 2rem 'Dancing Script';
+}
+body{
+    position: relative;
+    height: 100vh;
+}
+@media screen and (max-width: 727px){
+    body{ 
+        width: 727px;
+    }
+}
+.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+    opacity: 0;
+    animation: fadein 1s linear 1 normal forwards;
+}
+@keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+#wrapper{
+    position: relative;
+    width: 370px;
+    height: 180px;
+    margin: 90px auto;
+}
+.updatedwrapper{
+    height: 450px !important;
+}
+#sheet, #container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#sheet{
+    background-color: #ccc;
+    opacity: 0.5;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px black;
+}
+input, button{
+    background-color: #ccff33;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 28px auto;
+    padding: 7px 0px;
+    width: 75%;
+    text-align: center;
+    font: 700 1.4rem 'Poppins';
+    transition: 300ms;
+}
+input::placeholder{
+    opacity: 0.8;
+}
+input:focus::placeholder{
+    opacity: 1;
+}
+input:focus{
+    outline: none;
+    background-color: #22223b;
+    color: #ccff33;
+}
+button{
+    background-color: lightgray;
+    margin: 0px auto;
+    color: #22223b;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #5adbff;
+}
+#div-wrap{
+    display: none;
+    position: relative;
+    width: 85%;
+    height: 50%;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.updateddivwrap{
+    display: block !important;
+}
+#div-sheet, ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    list-style: none;
+}
+#div-sheet{
+    background-color: white;
+    opacity: 0.6;
+}
+li{
+    font-family: 'Amaranth';
+    text-align: center;
+}
+ul{
+    margin-top: 6px;
+}
+.firstli, .secondli{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.thirdli{
+    padding: 13px 0px;
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-shadow: 4px 4px 1px #979dac;
+}
+.fourthli, .fifthli, .sixthli{
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.sixthli{
+    font-weight: 700;
+}
